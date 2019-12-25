@@ -4,24 +4,61 @@ title: Projects
 ---
 
 
-<div class="row">
-  <div class="col-md-12">
-    <p>
-        <a href="https://github.com/fserre/F2Matrix">F2Matrix</a> <br />
-F2Matrix is a linear algebra library for small matrices (of maximal size $8\times 8$) in $\mathbb F2$, i.e. the Galois field with two elements. It supports matrix addition (and therefore subtraction), multiplication, transposition, inversion and rank computation.<br/>
+<div class="block-content ">
+    <div class="timeline education">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="exp-holder">
 
-This library aims to provide high performance, an relies heavily on bit manipulation instructions. Particularly, it requires an x64, BMI2 capable processor (e.g. Intel Haswell or newer). It was used for <a href="https://doi.org/10.1109/ICASSP.2019.8682213">searching optimal Walsh-Hadamard transform algorithms for streaming</a>.
-    </p>
-  </div>
+
+                    {% for p in site.pages %}
+                    {% if p.type == 'project' %}
+                    <div class="exp">
+                        <div class="hgroup" >
+                            <h4>{{ p.title }}</h4>
+                            <h6>{{ p.language }}</h6>
+                            <h6>
+                                {% if p.web %}
+								<a href="{{ p.source }}"><span class="current">Web</span></a> |
+								{% endif %}
+                                <a href="{{ p.source }}"><span class="current">Source</span></a>
+                            </h6>
+                        </div>
+
+                        <p align="justify">
+                            {{ p.abstract }}
+                        </p>
+                    </div>
+                    <!--Divider-->
+                    <div class="divider-m tCenter margTSmall margBSmall clearfix">
+                        <div class="col-md-12">
+                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
+                                <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+				                        <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+					                        29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+				                    </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+
+
+
+
+
+
+                </div>
+                <!--End experience holder-->
+            </div>
+
+
+        </div>
+        <!--End row-->
+
+    </div>
+    <!--End timeline-->
+
 </div>
 
-<div class="row">
-  <div class="col-md-12">
-    <p>
-        <a href="https://acl.inf.ethz.ch/research/hardware/">SGen - A Streaming Hardware Generator</a> <br />
-SGen is a generator capable of producing efficient hardware designs operating on *streaming* datasets. “Streaming” means that the dataset is divided into several chunks that are processed during several cycles, thus allowing a reduced use of resources. The size of these chunks is referred as the streaming width. It outputs a Verilog file that can be used for FPGAs.<br/>
-<a href="https://acl.inf.ethz.ch/research/hardware/">Project description</a> <br />
-<a href="https://github.com/fserre/sgen">Source</a> <br />
-    </p>
-  </div>
-</div>

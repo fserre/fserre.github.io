@@ -23,7 +23,7 @@ title: François Serre
 
     <div class="row">
       <div class="col-md-6">
-        <p>
+        <p align="justify">
           I completed my PhD degree in Computer Science at <a href="https://www.ethz.ch/">ETH Zürich</a>
           in the <a href="https://acl.inf.ethz.ch/">Advanced Computing Laboratory</a>, supervised by
           <a href="https://acl.inf.ethz.ch/people/markusp/">Prof. Dr. Markus Püschel</a>.
@@ -32,14 +32,14 @@ title: François Serre
         <br />
       </div>
       <div class="col-md-6">
-        <p>
+        <p align="justify">
           I am originally from Paris, France, where, after completing three years of <a href="https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles">classes préparatoires</a> at <a href="https://en.wikipedia.org/wiki/Lyc%C3%A9e_Louis-le-Grand">Lycée Louis-le-Grand</a>, I enrolled at the Ecole Polytechnique, and obtained the <a href="https://en.wikipedia.org/wiki/%C3%89cole_Polytechnique#The_'Polytechnicien_Engineer'_program">diplôme d'ingénieur</a> degree. As part of this program, I completed a MSc at <a href="https://www.ethz.ch/">ETH Zurich</a> focused on visual computing and computer graphics.
         </p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-      <p>
+      <p align="justify">
         My interests focus on the implementation of software and hardware algorithms for complex problems (such as the ones used in visual computing or machine learning) that reach high performance, with, when possible, proven optimality.
       </p>
       </div>
@@ -89,6 +89,49 @@ title: François Serre
 </div>
 
 
+<div class="main-title">
+  <h1>Projects</h1>
+  <div class="divider">
+    <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+      <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793"  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="block-content ">
+    <div class="timeline education">
+      <div class="row ">
+        <div class="col-md-12">
+          <div class="exp-holder">
+
+            {% for p in site.pages %}
+            {% if p.type == 'project' %}
+            <div class="exp">
+              <div class="hgroup" >
+                <h4>{{ p.title }}</h4>
+                <h6>{{ p.language }}</h6>
+                <h6>
+                  {% if p.web %}
+								<a href="{{ p.source }}"><span class="current">Web</span></a> |
+								{% endif %}
+                                <a href="{{ p.source }}"><span class="current">Source</span></a>
+                </h6>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <a href="projects/" class="but brd">Read More</a>
+  </div>
+</div>
 
 
 
