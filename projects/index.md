@@ -19,7 +19,7 @@ title: Projects
                             <h6>{{ p.language }}</h6>
                             <h6>
                                 {% if p.web %}
-								<a href="{{ p.source }}"><span class="current">Web</span></a> |
+								<a href="{{ p.web }}"><span class="current">Web</span></a> |
 								{% endif %}
                                 <a href="{{ p.source }}"><span class="current">Source</span></a>
                             </h6>
