@@ -103,24 +103,28 @@ title: François Serre
 <div class="content">
   <div class="block-content ">
     <div class="timeline education">
-      <div class="row ">
-        <div class="col-md-12">
+      <div class="row "> 
+        <div class="col-md-12"> 
           <div class="exp-holder">
 
             {% for p in site.pages %}
             {% if p.type == 'project' %}
-            <div class="exp">
-              <div class="hgroup" >
-                <h4>{{ p.title }}</h4>
-                <h6>{{ p.language }}</h6>
-                <h6>
-                  {% if p.web %}
-								<a href="{{ p.web }}"><span class="current">Web</span></a> |
-								{% endif %}
-                                <a href="{{ p.source }}"><span class="current">Source</span></a>
-                </h6>
-              </div>
-            </div>
+            <div class="exp row">
+				<div class="col-md-2">
+					<img style="max-width: 80px;max-height: 100px; padding: 5px; align:left;" src="{{ p.img }}" />
+				</div>
+				<div class="col-md-10 hgroup" >
+					<h4>{{ p.title }}</h4>
+					<h6>{{ p.language }}</h6>
+					<h6>
+					{% if p.web %}
+					<a href="{{ p.web }}"><span class="current">Web</span></a> |
+					{% endif %}
+					<a href="{{ p.source }}"><span class="current">Source</span></a>
+					</h6>
+				</div>
+			</div>
+			<br /><br /><br />
             {% endif %}
             {% endfor %}
 

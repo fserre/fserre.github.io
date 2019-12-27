@@ -4,6 +4,7 @@ type: project
 
 title: "SGen"
 language: "Scala"
+img: "/img/sgen.png"
 source: https://github.com/fserre/sgen
 web: https://acl.inf.ethz.ch/research/hardware/
 abstract: |
