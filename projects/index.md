@@ -17,13 +17,13 @@ title: Projects
 							
 						</div>
 						<div class="row">
-							<div class="col-md-2">
-								<img style="max-width: 115px;max-height: 100px; padding: 5px; align:left;" src="{{ p.img }}" />
+							<div class="col-md-3">
+								<img style="max-width: 100%;max-height: 100px; padding: 5px; align:left;" src="{{ p.img }}" />
 								<div class="hgroup" >
 									<br />
 								</div>
 							</div>
-							<div class="col-md-10"> 
+							<div class="col-md-9"> 
 								<div class="hgroup" >  
 									<p align="justify">
 									{{ p.abstract }}
