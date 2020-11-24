@@ -158,6 +158,30 @@
     color: #777777;
 }
 
+
+
+
+// Project
+
+.project{
+    //padding: 5px;
+    //border: 2px solid;
+    //border-color: #ffffff;
+    border-radius: 7px;
+}
+.project:hover {
+    //padding: 5px;
+    //border: 2px solid;
+    //border-color: #26292e;
+    //color: #000000;
+    filter: invert(20%);
+    -webkit-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 7px;
+}
+
+
 /* --------------------------------------------------------------- */
 /* -------------------------- Timeline --------------------------- */
 /* --------------------------------------------------------------- */

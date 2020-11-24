@@ -1,7 +1,7 @@
 ---
 layout: publication
 type: project
-
+showInHomepage: true
 title: "GPUPoly"
 language: "C++, CUDA"
 img: "/img/gpupoly.png"

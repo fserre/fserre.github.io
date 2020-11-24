@@ -1,7 +1,7 @@
 ---
 layout: publication
 type: project
-
+showInHomepage: false
 title: "F2Matrix"
 language: "C++"
 img: "/img/f2matrix.png"

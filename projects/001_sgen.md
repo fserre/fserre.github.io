@@ -1,7 +1,7 @@
 ---
 layout: publication
 type: project
-
+showInHomepage: true
 title: "SGen"
 language: "Scala, Verilog"
 img: "/img/sgen.png"
