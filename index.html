@@ -79,7 +79,7 @@ title: François Serre
                 {% for p in site.pages %}
                 {% if p.type == 'project' and p.showInHomepage %}
                 <span class="col-md-6">
-                    <a href="projects/#{{ p.name }}">
+                    <a href="{{ p.link }}">
                         <img class="project" src="{{ p.img }}"/>
                     </a>
                 </span>

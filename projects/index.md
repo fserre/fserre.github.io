@@ -13,19 +13,11 @@ title: Projects
 				<div class="exp-holder">
 					<div class="exp">
 						<div class="hgroup" >
-							<h4>{{ p.title }}</h4>
+							<a href="{{ p.link }}"><h4>{{ p.title }}</h4></a>
 						</div>
 						<div class="">
 							<div class="col-md-5" style="padding:0px">
-								<img style="max-width: 300px;max-height: 100px;" src="{{ p.img }}" />
-								<div class="hgroup" >
-        							<div class="h6">
-                                        {% if p.web %}
-                                            <a href="{{ p.web }}"><span class="source">Web</span></a> |
-                                        {% endif %}
-                                        <a href="{{ p.source }}"><span class="source">Source</span></a>
-                                    </div>
-								</div>
+								<a href="{{ p.link }}"><img style="max-width: 300px;max-height: 100px;" src="{{ p.img }}" /></a>
 							</div>
 							<div class="col-md-7"> 
 								<div class="hgroup" >  

@@ -5,6 +5,7 @@ showInHomepage: true
 title: "SGen"
 language: "Scala, Verilog"
 img: "/img/sgen.png"
+link: https://acl.inf.ethz.ch/research/hardware/
 source: https://github.com/fserre/sgen
 web: https://acl.inf.ethz.ch/research/hardware/
 abstract: |
