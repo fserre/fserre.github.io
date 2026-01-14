@@ -107,36 +107,6 @@ title: François Serre
     </div>
 </div>
 
-<div class="content">
-    <div class="block-content" id="ytplayer">
-    </div>
-	<script>
-  // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  // Replace the 'ytplayer' element with an <iframe> and
-  // YouTube player after the API code downloads.
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-      height: '432',
-      width: '768',
-      videoId: 'rM95uwgFFVw',
-	  playerVars:{
-	  autoplay: 1,
-	  cc_load_policy:1,
-	  modestbranding:1},
-	      events: {onReady: function(e) {e.target.mute();}}
-    });
-  }
-</script>
-</div>
-
-
-
 <div class="main-title">
     <h1>Publications</h1>
     <div class="divider">
